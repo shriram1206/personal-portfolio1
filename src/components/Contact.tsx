@@ -94,22 +94,22 @@ const Contact: React.FC = () => {
                                     className="glass-card p-4 hover-lift"
                                 >
                                     <div className="flex items-center gap-4">
-                                        <div className="p-3 bg-gradient-to-br from-light-primary to-light-accent dark:from-dark-primary dark:to-dark-accent rounded-soft">
-                                            <info.icon className="w-5 h-5 text-white" />
+                                        <div className="p-3 bg-gradient-to-br from-light-primary to-light-accent dark:from-dark-primary dark:to-dark-accent rounded-soft shadow-lg">
+                                            <info.icon className="w-5 h-5 text-white" strokeWidth={2.5} />
                                         </div>
                                         <div>
-                                            <p className="text-light-textSecondary dark:text-dark-textSecondary text-sm">
+                                            <p className="text-light-textSecondary dark:text-dark-accent text-sm font-medium">
                                                 {info.label}
                                             </p>
                                             {info.href ? (
                                                 <a
                                                     href={info.href}
-                                                    className="text-light-textPrimary dark:text-dark-textPrimary font-medium hover:text-light-primary dark:hover:text-dark-primary transition-colors"
+                                                    className="text-light-textPrimary dark:text-white font-semibold hover:text-light-primary dark:hover:text-dark-primary transition-colors"
                                                 >
                                                     {info.value}
                                                 </a>
                                             ) : (
-                                                <p className="text-light-textPrimary dark:text-dark-textPrimary font-medium">
+                                                <p className="text-light-textPrimary dark:text-white font-semibold">
                                                     {info.value}
                                                 </p>
                                             )}
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                             transition={{ delay: 0.3 }}
                             className="glass-card p-6"
                         >
-                            <h3 className="text-lg font-heading font-semibold text-light-textPrimary dark:text-dark-textPrimary mb-4">
+                            <h3 className="text-lg font-heading font-semibold text-light-textPrimary dark:text-white mb-4">
                                 Connect on Social Media
                             </h3>
                             <div className="flex gap-4">
@@ -137,12 +137,12 @@ const Contact: React.FC = () => {
                                         href={social.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="p-3 bg-light-surface dark:bg-dark-bg border border-light-border dark:border-dark-border rounded-soft hover:shadow-soft transition-all"
+                                        className="p-3 bg-light-surface dark:bg-dark-surface border-2 border-light-border dark:border-dark-accent/50 rounded-soft hover:shadow-lg transition-all shadow-sm"
                                         whileHover={{ scale: 1.1, y: -2 }}
                                         whileTap={{ scale: 0.9 }}
                                         aria-label={social.label}
                                     >
-                                        <social.icon className="w-6 h-6 text-light-primary dark:text-dark-primary" />
+                                        <social.icon className="w-6 h-6 text-light-primary dark:text-dark-primary" strokeWidth={2.5} />
                                     </motion.a>
                                 ))}
                             </div>
@@ -162,7 +162,7 @@ const Contact: React.FC = () => {
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                             >
-                                <Download className="w-5 h-5" />
+                                <Download className="w-5 h-5" strokeWidth={2.5} />
                                 Download Resume
                             </motion.a>
                         </motion.div>
@@ -177,7 +177,7 @@ const Contact: React.FC = () => {
                     >
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div>
-                                <label htmlFor="name" className="block text-light-textPrimary dark:text-dark-textPrimary font-medium mb-2">
+                                <label htmlFor="name" className="block text-light-textPrimary dark:text-white font-semibold mb-2">
                                     Name
                                 </label>
                                 <input
@@ -193,7 +193,7 @@ const Contact: React.FC = () => {
                             </div>
 
                             <div>
-                                <label htmlFor="email" className="block text-light-textPrimary dark:text-dark-textPrimary font-medium mb-2">
+                                <label htmlFor="email" className="block text-light-textPrimary dark:text-white font-semibold mb-2">
                                     Email
                                 </label>
                                 <input
@@ -209,7 +209,7 @@ const Contact: React.FC = () => {
                             </div>
 
                             <div>
-                                <label htmlFor="subject" className="block text-light-textPrimary dark:text-dark-textPrimary font-medium mb-2">
+                                <label htmlFor="subject" className="block text-light-textPrimary dark:text-white font-semibold mb-2">
                                     Subject
                                 </label>
                                 <input
@@ -225,7 +225,7 @@ const Contact: React.FC = () => {
                             </div>
 
                             <div>
-                                <label htmlFor="message" className="block text-light-textPrimary dark:text-dark-textPrimary font-medium mb-2">
+                                <label htmlFor="message" className="block text-light-textPrimary dark:text-white font-semibold mb-2">
                                     Message
                                 </label>
                                 <textarea
@@ -251,7 +251,7 @@ const Contact: React.FC = () => {
                                     <>Sending...</>
                                 ) : (
                                     <>
-                                        <Send className="w-5 h-5" />
+                                        <Send className="w-5 h-5" strokeWidth={2.5} />
                                         Send Message
                                     </>
                                 )}

@@ -50,9 +50,9 @@ const Skills: React.FC = () => {
                                 {/* Category Header */}
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="p-2.5 bg-gradient-to-br from-light-primary to-light-accent dark:from-dark-primary dark:to-dark-accent rounded-soft shadow-lg">
-                                        <Icon className="w-5 h-5 text-white" />
+                                        <Icon className="w-5 h-5 text-white" strokeWidth={2.5} />
                                     </div>
-                                    <h3 className="text-xl font-heading font-bold text-light-textPrimary dark:text-dark-textPrimary">
+                                    <h3 className="text-xl font-heading font-bold text-light-textPrimary dark:text-white">
                                         {skillCategory.category}
                                     </h3>
                                 </div>
@@ -69,8 +69,8 @@ const Skills: React.FC = () => {
                                             whileHover={{ scale: 1.05 }}
                                             className="group relative"
                                         >
-                                            <div className="px-4 py-2 bg-light-surface dark:bg-dark-bg border border-light-border dark:border-dark-border rounded-soft hover:border-light-primary dark:hover:border-dark-primary transition-colors cursor-default">
-                                                <span className="text-light-textPrimary dark:text-dark-textPrimary font-medium text-sm group-hover:text-light-primary dark:group-hover:text-dark-primary transition-colors">
+                                            <div className="px-4 py-2 bg-light-surface dark:bg-dark-surface border-2 border-light-border dark:border-dark-accent/50 rounded-soft hover:border-light-primary dark:hover:border-dark-primary transition-colors cursor-default shadow-sm">
+                                                <span className="text-light-textPrimary dark:text-dark-textPrimary font-semibold text-sm group-hover:text-light-primary dark:group-hover:text-dark-primary transition-colors">
                                                     {skill.name}
                                                 </span>
                                             </div>
@@ -90,7 +90,7 @@ const Skills: React.FC = () => {
                     transition={{ delay: 0.5 }}
                     className="mt-12 glass-card p-8"
                 >
-                    <h3 className="text-xl font-heading font-semibold text-light-textPrimary dark:text-dark-textPrimary mb-6 text-center">
+                    <h3 className="text-xl font-heading font-semibold text-light-textPrimary dark:text-white mb-6 text-center">
                         Additional Expertise
                     </h3>
                     <div className="flex flex-wrap justify-center gap-3">
@@ -113,7 +113,7 @@ const Skills: React.FC = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.6 + index * 0.05 }}
                                 whileHover={{ scale: 1.1 }}
-                                className="px-4 py-2 bg-gradient-to-r from-light-primary/10 to-light-accent/10 dark:from-dark-primary/10 dark:to-dark-accent/10 border border-light-primary/20 dark:border-dark-primary/20 rounded-soft text-light-textPrimary dark:text-dark-textPrimary font-medium text-sm"
+                                className="px-4 py-2 bg-gradient-to-r from-light-primary/10 to-light-accent/10 dark:from-dark-primary/20 dark:to-dark-accent/20 border-2 border-light-primary/20 dark:border-dark-primary/40 rounded-soft text-light-textPrimary dark:text-dark-textPrimary font-semibold text-sm shadow-sm"
                             >
                                 {skill}
                             </motion.span>

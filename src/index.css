@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Manrope:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,44 +6,47 @@
 
 @layer base {
   :root {
-    /* Premium Light Mode Colors (RGB Channels) */
+    /* Ultra-Minimalist Light Mode (RGB Channels) */
     --color-light-bg: 255 255 255;
-    /* #FFFFFF */
-    --color-light-surface: 248 250 252;
-    /* #F8FAFC */
-    --color-light-primary: 79 70 229;
-    /* #4F46E5 */
-    --color-light-secondary: 14 165 233;
-    /* #0EA5E9 */
-    --color-light-accent: 139 92 246;
-    /* #8B5CF6 */
+    /* #FFFFFF - Pure White */
+    --color-light-surface: 250 250 250;
+    /* #FAFAFA - Neutral-50 */
 
-    /* High Contrast Text */
-    --color-light-textPrimary: 15 23 42;
-    /* #0F172A */
-    --color-light-textSecondary: 51 65 85;
-    /* #334155 */
-    --color-light-border: 226 232 240;
-    /* #E2E8F0 */
+    --color-light-primary: 23 23 23;
+    /* #171717 - Neutral-900 (Black) replaces Blue */
+    --color-light-secondary: 115 115 115;
+    /* #737373 - Neutral-500 (Mid Grey) */
+    --color-light-accent: 64 64 64;
+    /* #404040 - Neutral-700 */
 
-    /* Premium Dark Mode Colors (RGB Channels) */
-    --color-dark-bg: 11 17 32;
-    /* #0B1120 */
-    --color-dark-surface: 30 41 59;
-    /* #1E293B */
-    --color-dark-primary: 129 140 248;
-    /* #818CF8 */
-    --color-dark-secondary: 56 189 248;
-    /* #38BDF8 */
-    --color-dark-accent: 167 139 250;
-    /* #A78BFA */
+    /* Typography Colors */
+    --color-light-textPrimary: 10 10 10;
+    /* #0A0A0A - Nearly Black */
+    --color-light-textSecondary: 100 100 100;
+    /* #646464 - Smooth Grey */
+    --color-light-border: 229 229 229;
+    /* #E5E5E5 - Neutral-200 */
 
-    --color-dark-textPrimary: 248 250 252;
-    /* #F8FAFC */
-    --color-dark-textSecondary: 203 213 225;
-    /* #CBD5E1 - Increased contrast */
-    --color-dark-border: 51 65 85;
-    /* #334155 */
+
+    /* Ultra-Minimalist Dark Mode (RGB Channels) - Enhanced Visibility */
+    --color-dark-bg: 5 5 5;
+    /* #050505 - Deepest Carbon */
+    --color-dark-surface: 30 30 30;
+    /* #1E1E1E - Brighter for better contrast */
+
+    --color-dark-primary: 255 255 255;
+    /* #FFFFFF - Pure White for maximum contrast */
+    --color-dark-secondary: 180 180 180;
+    /* #B4B4B4 - Brighter Neutral-400 */
+    --color-dark-accent: 220 220 220;
+    /* #DCDCDC - Brighter Neutral-300 */
+
+    --color-dark-textPrimary: 255 255 255;
+    /* #FFFFFF - Pure White */
+    --color-dark-textSecondary: 160 160 160;
+    /* #A0A0A0 - Brighter for better readability */
+    --color-dark-border: 60 60 60;
+    /* #3C3C3C - Brighter border for visibility */
   }
 
   * {
@@ -56,7 +59,9 @@
 
   body {
     @apply bg-light-bg dark:bg-dark-bg text-light-textPrimary dark:text-dark-textPrimary;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: -0.011em;
+    /* Apple-like tight tracking */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
@@ -83,9 +88,8 @@
   h4,
   h5,
   h6 {
-    font-family: 'Outfit', system-ui, sans-serif;
-    letter-spacing: -0.02em;
-    /* Tight tracking for modern look */
+    @apply font-heading font-medium uppercase;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -93,21 +97,21 @@
 
   /* Premium Glassmorphism */
   .glass-card {
-    @apply bg-white/70 dark:bg-dark-surface/70 backdrop-blur-xl border border-light-border/50 dark:border-dark-border/50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply bg-white/70 dark:bg-dark-surface/90 backdrop-blur-xl border border-light-border/50 dark:border-dark-border rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300;
   }
 
   /* Button Styles */
   .btn-primary {
-    @apply px-8 py-3 bg-gradient-to-r from-light-primary to-light-accent dark:from-dark-primary dark:to-dark-accent text-white font-medium rounded-soft shadow-soft hover:shadow-glow dark:hover:shadow-glow-dark hover:scale-105 transition-all duration-300;
+    @apply px-8 py-3 bg-light-primary dark:bg-white text-white dark:text-dark-bg font-heading font-semibold rounded-soft shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-light-primary dark:border-white;
   }
 
   .btn-outline {
-    @apply px-8 py-3 border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-medium rounded-soft hover:bg-light-primary dark:hover:bg-dark-primary hover:text-white transition-all duration-300;
+    @apply px-8 py-3 border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-heading font-medium rounded-soft hover:bg-light-primary dark:hover:bg-dark-primary hover:text-white transition-all duration-300;
   }
 
   /* Input Styles */
   .input-field {
-    @apply w-full px-4 py-3 bg-light-surface dark:bg-dark-surface border border-light-border dark:border-dark-border rounded-soft focus:outline-none focus:ring-2 focus:ring-light-primary dark:focus:ring-dark-primary focus:border-transparent transition-all duration-300;
+    @apply w-full px-4 py-3 bg-light-surface dark:bg-dark-surface border-2 border-light-border dark:border-dark-border rounded-soft focus:outline-none focus:ring-2 focus:ring-light-primary dark:focus:ring-dark-primary focus:border-transparent transition-all duration-300 text-light-textPrimary dark:text-white placeholder:text-light-textSecondary dark:placeholder:text-dark-secondary;
   }
 
   /* Section Padding */
@@ -167,5 +171,11 @@
   /* Text Selection */
   ::selection {
     @apply bg-light-primary/30 dark:bg-dark-primary/30;
+  }
+  
+  /* Dark mode icon visibility */
+  .dark svg {
+    @apply text-white;
+    stroke-width: 2px;
   }
 }

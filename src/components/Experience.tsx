@@ -51,7 +51,7 @@ const Experience: React.FC = () => {
                                             transition={{ duration: 0.6 }}
                                             className="w-16 h-16 bg-gradient-to-br from-light-primary to-light-accent dark:from-dark-primary dark:to-dark-accent rounded-soft flex items-center justify-center shadow-soft"
                                         >
-                                            <Briefcase className="w-8 h-8 text-white" />
+                                            <Briefcase className="w-8 h-8 text-white" strokeWidth={2.5} />
                                         </motion.div>
                                     </div>
 
@@ -60,10 +60,10 @@ const Experience: React.FC = () => {
                                         {/* Header */}
                                         <div>
                                             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
-                                                <h3 className="text-xl font-heading font-bold text-light-textPrimary dark:text-dark-textPrimary">
+                                                <h3 className="text-xl font-heading font-bold text-light-textPrimary dark:text-white">
                                                     {exp.position}
                                                 </h3>
-                                                <span className="inline-flex items-center px-3 py-1 text-xs font-medium bg-light-primary/10 dark:bg-dark-primary/10 text-light-primary dark:text-dark-primary border border-light-primary/20 dark:border-dark-primary/20 rounded-soft w-fit">
+                                                <span className="inline-flex items-center px-3 py-1 text-xs font-semibold bg-light-primary/10 dark:bg-dark-primary/20 text-light-primary dark:text-dark-primary border-2 border-light-primary/20 dark:border-dark-primary/40 rounded-soft w-fit shadow-sm">
                                                     {exp.type.charAt(0).toUpperCase() + exp.type.slice(1)}
                                                 </span>
                                             </div>
@@ -86,7 +86,7 @@ const Experience: React.FC = () => {
                                                     transition={{ delay: index * 0.2 + i * 0.1 }}
                                                     className="flex items-start gap-3"
                                                 >
-                                                    <CheckCircle2 className="w-5 h-5 text-light-primary dark:text-dark-primary flex-shrink-0 mt-0.5" />
+                                                    <CheckCircle2 className="w-5 h-5 text-light-primary dark:text-dark-primary flex-shrink-0 mt-0.5" strokeWidth={2.5} />
                                                     <p className="text-light-textSecondary dark:text-dark-textSecondary text-sm leading-relaxed">
                                                         {achievement}
                                                     </p>

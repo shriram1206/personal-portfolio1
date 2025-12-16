@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, TrendingUp } from 'lucide-react';
 import { projects } from '../data/portfolio';
+import '../../src/styles/icons.module.css';
 
 const Projects: React.FC = () => {
     return (
@@ -73,7 +74,7 @@ const Projects: React.FC = () => {
                                         {project.techStack.map((tech) => (
                                             <span
                                                 key={tech}
-                                                className="px-3 py-1 text-sm bg-light-primary/10 dark:bg-dark-primary/10 text-light-primary dark:text-dark-primary border border-light-primary/20 dark:border-dark-primary/20 rounded-soft"
+                                                className="px-3 py-1.5 text-sm bg-light-primary/10 dark:bg-dark-primary/20 text-light-primary dark:text-dark-primary border-2 border-light-primary/20 dark:border-dark-primary/40 rounded-soft font-semibold shadow-sm"
                                             >
                                                 {tech}
                                             </span>
@@ -82,8 +83,8 @@ const Projects: React.FC = () => {
 
                                     {/* Key Achievements */}
                                     <div>
-                                        <h4 className="text-sm font-semibold text-light-textPrimary dark:text-dark-textPrimary mb-3 flex items-center gap-2">
-                                            <TrendingUp className="w-4 h-4 text-light-primary dark:text-dark-primary" />
+                                        <h4 className="text-sm font-semibold text-light-textPrimary dark:text-white mb-3 flex items-center gap-2">
+                                            <TrendingUp className="w-4 h-4 text-light-primary dark:text-dark-primary" strokeWidth={2.5} />
                                             Key Achievements
                                         </h4>
                                         <ul className="space-y-2">
@@ -104,12 +105,12 @@ const Projects: React.FC = () => {
                                         {project.metrics.map((metric) => (
                                             <div
                                                 key={metric.label}
-                                                className="p-3 bg-light-surface dark:bg-dark-bg rounded-soft border border-light-border dark:border-dark-border"
+                                                className="p-3 bg-light-surface dark:bg-dark-surface border-2 border-light-border dark:border-dark-accent/50 rounded-soft shadow-sm"
                                             >
-                                                <p className="text-xl font-heading font-bold gradient-text">
+                                                <p className="text-xl font-heading font-bold text-light-primary dark:text-white">
                                                     {metric.value}
                                                 </p>
-                                                <p className="text-xs text-light-textSecondary dark:text-dark-textSecondary mt-1">
+                                                <p className="text-xs text-light-textSecondary dark:text-dark-accent mt-1 font-medium">
                                                     {metric.label}
                                                 </p>
                                             </div>
@@ -123,11 +124,11 @@ const Projects: React.FC = () => {
                                                 href={project.links.github}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center gap-2 px-4 py-2 bg-light-textPrimary dark:bg-white text-white dark:text-dark-bg rounded-soft hover:shadow-soft transition-all"
+                                                className="inline-flex items-center gap-2 px-5 py-2.5 bg-light-textPrimary dark:bg-white text-white dark:text-dark-bg rounded-soft hover:shadow-lg transition-all font-semibold border-2 border-transparent dark:border-white"
                                                 whileHover={{ scale: 1.05 }}
                                                 whileTap={{ scale: 0.95 }}
                                             >
-                                                <Github className="w-4 h-4" />
+                                                <Github className="w-5 h-5" strokeWidth={2.5} />
                                                 GitHub
                                             </motion.a>
                                         )}
@@ -136,11 +137,11 @@ const Projects: React.FC = () => {
                                                 href={project.links.live || project.links.demo}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-light-primary to-light-accent dark:from-dark-primary dark:to-dark-accent text-white rounded-soft hover:shadow-soft transition-all"
+                                                className="inline-flex items-center gap-2 px-5 py-2.5 bg-light-primary dark:bg-dark-primary text-white dark:text-dark-bg rounded-soft hover:shadow-lg transition-all font-semibold border-2 border-light-primary dark:border-dark-primary"
                                                 whileHover={{ scale: 1.05 }}
                                                 whileTap={{ scale: 0.95 }}
                                             >
-                                                <ExternalLink className="w-4 h-4" />
+                                                <ExternalLink className="w-5 h-5" strokeWidth={2.5} />
                                                 Live Demo
                                             </motion.a>
                                         )}

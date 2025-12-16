@@ -129,14 +129,14 @@ const About: React.FC = () => {
                                     className="glass-card p-6 hover-lift"
                                 >
                                     <div className="flex items-center gap-4">
-                                        <div className="p-3 bg-gradient-to-br from-light-primary to-light-accent dark:from-dark-primary dark:to-dark-accent rounded-soft">
-                                            <stat.icon className="w-6 h-6 text-white" />
+                                        <div className="p-3 bg-gradient-to-br from-light-primary to-light-accent dark:from-dark-primary dark:to-dark-accent rounded-soft shadow-lg">
+                                            <stat.icon className="w-6 h-6 text-white" strokeWidth={2.5} />
                                         </div>
                                         <div>
-                                            <p className="text-2xl font-heading font-bold text-light-textPrimary dark:text-dark-textPrimary">
+                                            <p className="text-2xl font-heading font-bold text-light-textPrimary dark:text-white">
                                                 {stat.value}
                                             </p>
-                                            <p className="text-light-textSecondary dark:text-dark-textSecondary text-sm">
+                                            <p className="text-light-textSecondary dark:text-dark-accent text-sm font-medium">
                                                 {stat.label}
                                             </p>
                                         </div>
@@ -155,7 +155,7 @@ const About: React.FC = () => {
                         className="glass-card p-8 hover-lift"
                     >
                         <div className="text-center">
-                            <h3 className="text-xl font-heading font-semibold mb-6 text-light-textPrimary dark:text-dark-textPrimary">
+                            <h3 className="text-xl font-heading font-semibold mb-6 text-light-textPrimary dark:text-white">
                                 GitHub Activity (Live)
                             </h3>
                             <div className="grid grid-cols-2 gap-6">
@@ -163,10 +163,10 @@ const About: React.FC = () => {
                                     whileHover={{ scale: 1.05 }}
                                     className="p-4"
                                 >
-                                    <p className="text-4xl font-heading font-bold gradient-text mb-1">
+                                    <p className="text-4xl font-heading font-bold text-light-primary dark:text-white mb-1">
                                         {githubStats.repos}
                                     </p>
-                                    <p className="text-light-textSecondary dark:text-dark-textSecondary text-sm">
+                                    <p className="text-light-textSecondary dark:text-dark-accent text-sm font-medium">
                                         Public Repositories
                                     </p>
                                 </motion.div>
@@ -174,10 +174,10 @@ const About: React.FC = () => {
                                     whileHover={{ scale: 1.05 }}
                                     className="p-4"
                                 >
-                                    <p className="text-4xl font-heading font-bold gradient-text mb-1">
+                                    <p className="text-4xl font-heading font-bold text-light-primary dark:text-white mb-1">
                                         {githubStats.followers}
                                     </p>
-                                    <p className="text-light-textSecondary dark:text-dark-textSecondary text-sm">
+                                    <p className="text-light-textSecondary dark:text-dark-accent text-sm font-medium">
                                         Followers
                                     </p>
                                 </motion.div>
@@ -187,7 +187,7 @@ const About: React.FC = () => {
                                     href={personalInfo.github}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="text-sm text-light-primary dark:text-dark-primary hover:underline"
+                                    className="text-sm text-light-primary dark:text-dark-primary hover:underline font-medium"
                                 >
                                     View full profile on GitHub →
                                 </a>

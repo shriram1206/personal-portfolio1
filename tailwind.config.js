@@ -32,8 +32,8 @@ export default {
                 },
             },
             fontFamily: {
-                sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-                heading: ['"Outfit"', 'system-ui', 'sans-serif'],
+                sans: ['"Manrope"', 'system-ui', 'sans-serif'],
+                heading: ['"Julius Sans One"', 'sans-serif'],
             },
             borderRadius: {
                 'soft': '12px',

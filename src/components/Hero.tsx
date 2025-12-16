@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
                             transition={{ delay: 0.6 }}
                             className="flex items-center gap-3 p-4 glass-card"
                         >
-                            <Code2 className="w-5 h-5 text-light-primary dark:text-dark-primary flex-shrink-0" />
+                            <Code2 className="w-5 h-5 text-light-primary dark:text-dark-primary flex-shrink-0" strokeWidth={2.5} />
                             <span className="text-light-textSecondary dark:text-dark-textSecondary font-mono text-sm md:text-base">
                                 {typedText}
                                 <span className="animate-pulse">|</span>
@@ -111,11 +111,11 @@ const Hero: React.FC = () => {
                             <motion.a
                                 href="/resume.pdf"
                                 download
-                                className="btn-outline inline-flex items-center gap-2"
+                                className="px-8 py-3 border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-heading font-semibold rounded-soft hover:bg-light-primary dark:hover:bg-dark-primary hover:text-white transition-all duration-300 inline-flex items-center gap-2 shadow-sm"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <Download className="w-5 h-5" />
+                                <Download className="w-5 h-5" strokeWidth={2.5} />
                                 Download Resume
                             </motion.a>
                         </motion.div>
