@@ -5,7 +5,7 @@ export const personalInfo = {
     title: 'Full-Stack Software Engineer',
     location: 'Namakkal, Tamil Nadu, India',
     phone: '+91 8056668999',
-    email: 'ramofficial1205@gmail.com',
+    email: 'shriram.coder@gmail.com',
     linkedin: 'https://linkedin.com/in/shriram-m-sde',
     github: 'https://github.com/shriram1206',
     tagline: 'Building scalable microservices and AI-powered systems with production Java/Spring Boot expertise',
