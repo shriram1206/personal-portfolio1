@@ -149,6 +149,40 @@ export const projects: Project[] = [
         image: '/projects/personal-ai.png',
         date: 'January 2025',
     },
+    {
+        id: 'ai-agent-n8n',
+        title: 'Personal AI Assistant – n8n Automation Workflow',
+        description: 'Intelligent morning briefing system automating email categorization, task prioritization, and daily summaries using n8n, OpenAI GPT-4, and Telegram',
+        longDescription: 'Automated workflow orchestration system for daily productivity enhancement with AI-powered email processing and intelligent task management.',
+        techStack: ['n8n', 'OpenAI GPT-4', 'Gmail API', 'Telegram Bot', 'OAuth2', 'Webhooks', 'Cron Scheduler'],
+        achievements: [
+            'Built automated morning briefing system with scheduled triggers',
+            'Integrated OpenAI GPT-4 for intelligent email categorization and prioritization',
+            'Automated urgent communication detection with real-time Telegram notifications',
+            'Implemented daily task suggestion engine based on email content analysis',
+            'Configured OAuth2 authentication for secure Gmail API access',
+            'Designed multi-node workflow with error handling and retry logic',
+        ],
+        technicalDetails: [
+            'n8n workflow automation platform',
+            'AI-powered email processing with GPT-4',
+            'Scheduled executions via Cron triggers',
+            'Telegram Bot integration for notifications',
+            'Gmail API with OAuth2 security',
+        ],
+        metrics: [
+            { label: 'Nodes Used', value: '10+' },
+            { label: 'Daily Executions', value: 'Automated' },
+            { label: 'AI Model', value: 'GPT-4' },
+            { label: 'Time Saved', value: '30min/day' },
+        ],
+        links: {
+            github: 'https://github.com/shriram1206/ai-agent-n8n',
+            live: '#',
+        },
+        image: '/projects/ai-agent.png',
+        date: 'January 2026',
+    },
 ];
 
 export const experiences: Experience[] = [
