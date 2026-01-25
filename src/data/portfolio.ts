@@ -115,6 +115,40 @@ export const projects: Project[] = [
         image: '/projects/eduflow.png',
         date: 'September 2024',
     },
+    {
+        id: 'personal-ai',
+        title: 'Personal AI – Conversational AI Chatbot with Multi-User Authentication',
+        description: 'Full-stack AI-powered chatbot with multi-user authentication, admin approval system, and personality-based conversational AI deployed on Render',
+        longDescription: 'Privacy-first conversational AI system with JWT authentication, role-based access control, and Perplexity API integration for intelligent responses.',
+        techStack: ['Python', 'FastAPI', 'Perplexity API', 'SQLAlchemy', 'JWT', 'SQLite', 'HTML/CSS', 'JavaScript', 'Render'],
+        achievements: [
+            'Built multi-user authentication system with JWT tokens and Argon2 password hashing',
+            'Implemented admin dashboard with user approval workflow (pending/approved/rejected)',
+            'Integrated Perplexity AI API for intelligent conversational responses',
+            'Designed clean, responsive ChatGPT-style UI with conversation history management',
+            'Deployed on Render with environment-based configuration for production',
+            'Created personality-driven AI with customizable system prompts via JSON configuration',
+        ],
+        technicalDetails: [
+            'FastAPI backend with SQLAlchemy ORM',
+            'JWT-based session management',
+            'Role-based authorization (admin/user)',
+            'SQLite database with User, Conversation, and Message models',
+            'Clean frontend with vanilla JavaScript',
+        ],
+        metrics: [
+            { label: 'Authentication', value: 'JWT' },
+            { label: 'Deployment', value: 'Render' },
+            { label: 'Security', value: 'Argon2' },
+            { label: 'API', value: 'Perplexity' },
+        ],
+        links: {
+            github: 'https://github.com/shriram1206/personal-ai',
+            live: 'https://shriram-v5of.onrender.com/chat',
+        },
+        image: '/projects/personal-ai.png',
+        date: 'January 2025',
+    },
 ];
 
 export const experiences: Experience[] = [
