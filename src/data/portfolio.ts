@@ -2,17 +2,17 @@ import type { Project, Experience, Skill, Certification, Education } from '../ty
 
 export const personalInfo = {
     name: 'Shriram M',
-    title: 'Full-Stack Software Engineer',
+    title: 'Java Backend Developer',
     location: 'Namakkal, Tamil Nadu, India',
     phone: '+91 8056668999',
-    email: 'ramofficial1205@gmail.com',
+    email: 'shriram.coder@gmail.com',
     linkedin: 'https://linkedin.com/in/shriram-m-sde',
     github: 'https://github.com/shriram1206',
     tagline: 'Building scalable microservices and AI-powered systems with production Java/Spring Boot expertise',
     description: "Final-year CSE student passionate about enterprise architecture, automation, and delivering scalable solutions for 500+ users with 95%+ satisfaction rates.",
     techStack: ['Java', 'Spring Boot', 'React', 'Docker', 'Kubernetes', 'AI/ML'],
     graduation: 'Expected May 2026',
-    cgpa: '8.0/10.0 (80%)',
+    cgpa: '77%',
 };
 
 export const projects: Project[] = [
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     {
         id: 'asta-25',
         title: "ASTA'25 – National Symposium Event Assistant Chatbot",
-        description: "Full-stack application serving 500+ participants at Selvam College of Technology's national symposium with intelligent intent recognition and real-time event management",
+        description: "Backend application serving 500+ participants at Selvam College of Technology's national symposium with intelligent intent recognition and real-time event management",
         longDescription: 'Intelligent chatbot with intent recognition engine and real-time event management for national symposium.',
         techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'GitHub Actions'],
         achievements: [
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     {
         id: 'multigate-eduflow',
         title: 'Multigate EduFlow Portal – Automated Leave Management System',
-        description: 'Full-stack leave request management system serving 500+ users with 80% reduction in approval turnaround time (5 days → 24 hours)',
+        description: 'Backend leave request management system serving 500+ users with 80% reduction in approval turnaround time (5 days → 24 hours)',
         longDescription: 'Automated leave management system with role-based access control and real-time notifications.',
         techStack: ['React', 'Node.js', 'Express', 'MySQL', 'JWT Authentication'],
         achievements: [
@@ -97,7 +97,7 @@ export const projects: Project[] = [
             'Seamless integration with institutional systems',
         ],
         technicalDetails: [
-            'Full-stack MERN architecture',
+            'Backend MERN architecture',
             'MySQL database with optimized queries',
             'JWT-based authentication',
             'Role-based authorization',

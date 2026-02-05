@@ -56,8 +56,8 @@ const Hero: React.FC = () => {
                             transition={{ delay: 0.3 }}
                             className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-tight tracking-tight text-light-textPrimary dark:text-light-surface"
                         >
-                            Full-Stack <br className="hidden md:block" />
-                            <span className="gradient-text">Software Engineer</span>
+                            Java Backend <br className="hidden md:block" />
+                            <span className="gradient-text">Developer</span>
                         </motion.h1>
 
                         <motion.p

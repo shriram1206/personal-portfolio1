@@ -86,7 +86,7 @@ const About: React.FC = () => {
                             className="space-y-4"
                         >
                             <p className="text-light-textSecondary dark:text-dark-textSecondary leading-relaxed text-lg">
-                                I'm a passionate <span className="text-light-primary dark:text-dark-primary font-semibold">Full-Stack Software Engineer</span> with
+                                I'm a passionate <span className="text-light-primary dark:text-dark-primary font-semibold">Java Backend Developer</span> with
                                 expertise in building enterprise-grade applications that serve thousands of users.
                             </p>
                             <p className="text-light-textSecondary dark:text-dark-textSecondary leading-relaxed">
