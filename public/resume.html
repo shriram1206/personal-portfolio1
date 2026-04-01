@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shriram M - Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 9.8pt;
+      color: #000;
+      background: #fff;
+      padding: 26px 44px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .header { text-align: center; margin-bottom: 5px; }
+    .header h1 { font-size: 18pt; font-weight: bold; letter-spacing: 1px; margin-bottom: 1px; }
+    .header .title { font-size: 10.5pt; margin-bottom: 2px; }
+    .header .contact { font-size: 9pt; margin-bottom: 1px; }
+    .header .links { font-size: 9pt; }
+    .header a { color: #1a0dab; text-decoration: none; }
+
+    .section { margin-top: 8px; }
+    .section-title {
+      font-size: 10pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      border-bottom: 1.2px solid #000;
+      padding-bottom: 1px;
+      margin-bottom: 4px;
+    }
+
+    .two-col { display: flex; justify-content: space-between; align-items: baseline; }
+    .two-col .left  { font-weight: bold; font-size: 9.8pt; }
+    .two-col .right { font-size: 9pt; white-space: nowrap; }
+
+    .skills-table { width: 100%; border-collapse: collapse; }
+    .skills-table td { vertical-align: top; font-size: 9.3pt; padding: 0.8px 0; line-height: 1.42; }
+    .skills-table td.label { font-weight: bold; white-space: nowrap; padding-right: 5px; width: 140px; }
+
+    .block { margin-bottom: 6px; }
+    .sub-role { font-size: 9pt; color: #333; margin-top: 0px; }
+    .bullets { margin-left: 14px; margin-top: 1px; }
+    .bullets li { font-size: 9.3pt; line-height: 1.42; }
+
+    .edu-degree { font-size: 9.3pt; font-style: italic; }
+    .edu-cgpa   { font-size: 9.3pt; font-weight: bold; }
+
+    p.profile-text { font-size: 9.3pt; line-height: 1.42; }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 16px;
+      margin-left: 14px;
+    }
+    .cert-grid li { font-size: 9.3pt; line-height: 1.5; list-style: disc; }
+
+    .achieve-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 16px;
+      margin-left: 14px;
+    }
+    .achieve-grid li { font-size: 9.3pt; line-height: 1.5; list-style: disc; }
+
+    a.ilink { color: #1a0dab; text-decoration: none; font-size: 9pt; }
+    a.ilink:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>SHRIRAM M</h1>
+    <div class="title">Software Development Engineer</div>
+    <div class="contact">
+      Namakkal, Tamil Nadu &nbsp;|&nbsp;
+      <a href="mailto:shriram.coder@gmail.com">shriram.coder@gmail.com</a> &nbsp;|&nbsp;
+      <a href="tel:+919600835006">+91 96008 35006</a>
+    </div>
+    <div class="links">
+      <a href="https://github.com/shriram1206" target="_blank">GitHub</a> &nbsp;|&nbsp;
+      <a href="#">Portfolio</a> &nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/shriram-m-sde" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="section">
+    <div class="section-title">Profile</div>
+    <p class="profile-text">Final-year CS student (May 2026) building production-grade AI systems with Java, Spring Boot, Spring AI, and Next.js. Shipped a live SaaS product, implemented RAG pipelines and MCP-based agentic workflows, and delivered microservices handling 1,000+ concurrent requests. Passionate about applied AI research — bridging LLM capabilities with real-world engineering.</p>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="two-col">
+      <span class="left">Selvam College of Technology, Namakkal</span>
+      <span class="right">2022 – May 2026 (Expected)</span>
+    </div>
+    <div class="two-col">
+      <span class="edu-degree">Bachelor of Engineering in <b>Computer Science and Engineering</b></span>
+      <span class="edu-cgpa">CGPA: 77%</span>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <table class="skills-table">
+      <tr>
+        <td class="label">Languages &amp; Frameworks:</td>
+        <td>Java, Spring Boot, Spring AI 1.1.0, Spring Data JPA, Python, JavaScript, React.js, Next.js, Node.js, REST APIs, OAuth2</td>
+      </tr>
+      <tr>
+        <td class="label">AI / ML:</td>
+        <td>RAG (Retrieval Augmented Generation), MCP (Model Context Protocol), OpenAI GPT-4o, pgvector, Prompt Engineering</td>
+      </tr>
+      <tr>
+        <td class="label">Cloud &amp; DevOps:</td>
+        <td>AWS, Docker, Kubernetes, Vercel, Supabase, Git, GitHub Actions, Maven, Postman</td>
+      </tr>
+      <tr>
+        <td class="label">Databases:</td>
+        <td>PostgreSQL, pgvector, MySQL</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <div class="block">
+      <div class="two-col">
+        <span class="left">Servimos Technologies Pvt Ltd (WeServeTech LLC) — SDE Intern</span>
+        <span class="right">Feb 2026 – Mar 2026 | Chennai, TN</span>
+      </div>
+      <ul class="bullets">
+        <li>Built <b>AI Report Generator</b> using <b>Java 17 + Spring Boot + Spring AI 1.1.0</b> — connected LLMs to structured business data for automated, context-aware report generation.</li>
+        <li>Implemented <b>RAG context injection</b> via <b>pgvector + PostgreSQL</b> for semantic document retrieval; applied <b>MCP (SSE transport, JSON-RPC tool calling)</b> to automate recurring reporting pipelines.</li>
+        <li>Delivered end-to-end AI backend module in <b>Agile sprint workflow</b> with mentor reviews and full ownership.</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="two-col">
+        <span class="left">Edunet Foundation — Technology Development Intern</span>
+        <span class="right">Jul 2025</span>
+      </div>
+      <ul class="bullets">
+        <li>Contributed bug fixes and features across SDLC phases, improving system stability by <b>~25%</b>; participated in Agile ceremonies and technical documentation.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="block">
+      <div class="two-col">
+        <span class="left">FeedbackWall — SaaS Feedback Management Platform</span>
+        <span class="right">2026 | <a class="ilink" href="https://feedbackwall-mu.vercel.app/" target="_blank">Live</a></span>
+      </div>
+      <div class="sub-role">Next.js · Supabase · Vercel</div>
+      <ul class="bullets">
+        <li>Solo-founded and shipped a <b>Canny alternative</b> — public feedback boards, feature voting, changelog, email alerts, and embeddable widget; live at <a class="ilink" href="https://feedbackwall-mu.vercel.app/" target="_blank">feedbackwall-mu.vercel.app</a> with real beta users onboarded.</li>
+        <li>Designed <b>multi-tenant Supabase architecture</b> with row-level security; deployed on Vercel with full CI/CD pipeline — built solo from auth to production.</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="two-col">
+        <span class="left">Cliq-Guarder — Enterprise AI-Powered Incident Response System</span>
+        <span class="right">2025 | <a class="ilink" href="#" target="_blank">GitHub</a></span>
+      </div>
+      <div class="sub-role">Java 17 · Spring Boot 3.2 · PostgreSQL · Docker · Kubernetes</div>
+      <ul class="bullets">
+        <li>Architected platform handling <b>1,000 concurrent webhook requests</b> with <b>&lt;500ms latency</b> and <b>zero downtime</b>; built <b>5-module microservices</b>: OAuth2 Webhook Handler (HMAC-SHA256), <b>ML Engine (85% acc.)</b>, Zoho Cliq Integration, Auto-Remediation, and Error Framework.</li>
+        <li>Production-ready: <b>50+ Java classes, 4,000+ LOC</b>, Docker, Kubernetes, Prometheus, JUnit 5, Swagger/OpenAPI docs.</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="two-col">
+        <span class="left">Personal AI Assistant — n8n Agentic Workflow</span>
+        <span class="right">2026 | <a class="ilink" href="#" target="_blank">GitHub</a></span>
+      </div>
+      <div class="sub-role">n8n · OpenAI GPT-4o · Gmail API · Telegram Bot · OAuth2</div>
+      <ul class="bullets">
+        <li>Built agentic morning briefing system — <b>AI categorizes emails, prioritizes tasks, delivers Telegram summary</b> via scheduled triggers and OAuth2 authentication.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <ul class="cert-grid">
+      <li>Introduction to Model Context Protocol — <b>Anthropic</b></li>
+      <li>Software &amp; Agile Development — <b>Infosys Springboard</b></li>
+      <li>Cloud Computing — <b>NPTEL</b></li>
+    </ul>
+  </div>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="section">
+    <div class="section-title">Achievements</div>
+    <ul class="achieve-grid">
+      <li>Solo-founded <b>FeedbackWall</b> — live SaaS with real beta users</li>
+      <li>Ranked <b>1st</b> in weekly CodeChef college leaderboard</li>
+      <li>GeeksforGeeks Campus Rank <b>3</b> — 54 problems solved</li>
+      <li>Solved <b>50+</b> DSA problems on LeetCode</li>
+    </ul>
+  </div>
+
+</body>
+</html>

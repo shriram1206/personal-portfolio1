@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, TrendingUp } from 'lucide-react';
 import { projects } from '../data/portfolio';
+import { FeedbackWallLogo } from './FeedbackWallLogo';
 import '../../src/styles/icons.module.css';
 
 const Projects: React.FC = () => {
@@ -54,6 +55,14 @@ const Projects: React.FC = () => {
                                                 {project.date}
                                             </p>
                                         </div>
+                                        {/* Logo Badge - Top Right */}
+                                        {project.logo === 'feedbackwall' && (
+                                            <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm p-2 rounded-soft shadow-lg hover:bg-white transition-all">
+                                                <div className="text-black">
+                                                    <FeedbackWallLogo size="md" />
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                 </motion.div>
 

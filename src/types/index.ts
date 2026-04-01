@@ -17,6 +17,7 @@ export interface Project {
     };
     image: string;
     date: string;
+    logo?: string;
 }
 
 export interface Experience {

@@ -2,20 +2,56 @@ import type { Project, Experience, Skill, Certification, Education } from '../ty
 
 export const personalInfo = {
     name: 'Shriram M',
-    title: 'Java Backend Developer',
+    title: 'Software Development Engineer',
     location: 'Namakkal, Tamil Nadu, India',
-    phone: '+91 8056668999',
+    phone: '+91 96008 35006',
     email: 'shriram.coder@gmail.com',
     linkedin: 'https://linkedin.com/in/shriram-m-sde',
     github: 'https://github.com/shriram1206',
-    tagline: 'Building scalable microservices and AI-powered systems with production Java/Spring Boot expertise',
-    description: "Final-year CSE student passionate about enterprise architecture, automation, and delivering scalable solutions for 500+ users with 95%+ satisfaction rates.",
-    techStack: ['Java', 'Spring Boot', 'React', 'Docker', 'Kubernetes', 'AI/ML'],
+    tagline: 'Building production-grade AI systems with Java, Spring Boot, Spring AI, and Next.js — RAG pipelines, MCP-based workflows, microservices at scale',
+    description: "Final-year CS student (May 2026) building production-grade AI systems with Java, Spring Boot, Spring AI, and Next.js. Shipped a live SaaS product, implemented RAG pipelines and MCP-based agentic workflows, and delivered microservices handling 1,000+ concurrent requests. Passionate about applied AI research — bridging LLM capabilities with real-world engineering.",
+    techStack: ['Java 17', 'Spring Boot', 'Spring AI', 'RAG', 'MCP', 'Next.js', 'React', 'Docker', 'Kubernetes', 'AI/ML'],
     graduation: 'Expected May 2026',
     cgpa: '77%',
 };
 
 export const projects: Project[] = [
+    {
+        id: 'feedbackwall',
+        title: 'FeedbackWall — SaaS Feedback Management Platform',
+        description: 'Solo-founded and shipped a public feedback management platform — Canny alternative with feature voting, changelog, email alerts, and embeddable widget',
+        longDescription: 'Production-grade SaaS feedback management platform with multi-tenant architecture, real-time notifications, and embeddable feedback widgets for live beta users.',
+        techStack: ['Next.js', 'React', 'TypeScript', 'Supabase', 'PostgreSQL', 'Vercel', 'Tailwind CSS'],
+        achievements: [
+            'Solo-founded and shipped a Canny alternative with public feedback boards',
+            'Implemented feature voting and changelog features',
+            'Built email alert system for feature updates',
+            'Created embeddable widget for seamless integration',
+            'Live deployment at feedbackwall-mu.vercel.app with real beta users onboarded',
+            'Designed multi-tenant Supabase architecture with row-level security',
+            'Deployed on Vercel with full CI/CD pipeline',
+        ],
+        technicalDetails: [
+            'Multi-tenant Supabase architecture',
+            'Row-level security (RLS) for data isolation',
+            'Full CI/CD pipeline with Vercel',
+            'Real-time notifications system',
+            'Embeddable widget technology',
+        ],
+        metrics: [
+            { label: 'Status', value: 'Live Production' },
+            { label: 'Beta Users', value: 'Active' },
+            { label: 'Build Time', value: 'Solo' },
+            { label: 'Platform', value: 'Vercel' },
+        ],
+        links: {
+            live: 'https://feedbackwall-mu.vercel.app/',
+            github: '#',
+        },
+        image: '/projects/feedbackwall.png',
+        date: '2026',
+        logo: 'feedbackwall',
+    },
     {
         id: 'cliq-guarder',
         title: 'Cliq-Guarder – Enterprise AI-Powered Incident Response System',
@@ -115,9 +151,89 @@ export const projects: Project[] = [
         image: '/projects/eduflow.png',
         date: 'September 2024',
     },
+    {
+        id: 'personal-ai',
+        title: 'Personal AI – Conversational AI Chatbot with Multi-User Authentication',
+        description: 'Full-stack AI-powered chatbot with multi-user authentication, admin approval system, and personality-based conversational AI deployed on Render',
+        longDescription: 'Privacy-first conversational AI system with JWT authentication, role-based access control, and Perplexity API integration for intelligent responses.',
+        techStack: ['Python', 'FastAPI', 'Perplexity API', 'SQLAlchemy', 'JWT', 'SQLite', 'HTML/CSS', 'JavaScript', 'Render'],
+        achievements: [
+            'Built multi-user authentication system with JWT tokens and Argon2 password hashing',
+            'Implemented admin dashboard with user approval workflow (pending/approved/rejected)',
+            'Integrated Perplexity AI API for intelligent conversational responses',
+            'Designed clean, responsive ChatGPT-style UI with conversation history management',
+            'Deployed on Render with environment-based configuration for production',
+            'Created personality-driven AI with customizable system prompts via JSON configuration',
+        ],
+        technicalDetails: [
+            'FastAPI backend with SQLAlchemy ORM',
+            'JWT-based session management',
+            'Role-based authorization (admin/user)',
+            'SQLite database with User, Conversation, and Message models',
+            'Clean frontend with vanilla JavaScript',
+        ],
+        metrics: [
+            { label: 'Authentication', value: 'JWT' },
+            { label: 'Deployment', value: 'Render' },
+            { label: 'Security', value: 'Argon2' },
+            { label: 'API', value: 'Perplexity' },
+        ],
+        links: {
+            github: 'https://github.com/shriram1206/personal-ai',
+            live: 'https://shriram-v5of.onrender.com/chat',
+        },
+        image: '/projects/personal-ai.png',
+        date: 'January 2025',
+    },
+    {
+        id: 'ai-agent-n8n',
+        title: 'Personal AI Assistant – n8n Automation Workflow',
+        description: 'Intelligent morning briefing system automating email categorization, task prioritization, and daily summaries using n8n, OpenAI GPT-4, and Telegram',
+        longDescription: 'Automated workflow orchestration system for daily productivity enhancement with AI-powered email processing and intelligent task management.',
+        techStack: ['n8n', 'OpenAI GPT-4', 'Gmail API', 'Telegram Bot', 'OAuth2', 'Webhooks', 'Cron Scheduler'],
+        achievements: [
+            'Built automated morning briefing system with scheduled triggers',
+            'Integrated OpenAI GPT-4 for intelligent email categorization and prioritization',
+            'Automated urgent communication detection with real-time Telegram notifications',
+            'Implemented daily task suggestion engine based on email content analysis',
+            'Configured OAuth2 authentication for secure Gmail API access',
+            'Designed multi-node workflow with error handling and retry logic',
+        ],
+        technicalDetails: [
+            'n8n workflow automation platform',
+            'AI-powered email processing with GPT-4',
+            'Scheduled executions via Cron triggers',
+            'Telegram Bot integration for notifications',
+            'Gmail API with OAuth2 security',
+        ],
+        metrics: [
+            { label: 'Nodes Used', value: '10+' },
+            { label: 'Daily Executions', value: 'Automated' },
+            { label: 'AI Model', value: 'GPT-4' },
+            { label: 'Time Saved', value: '30min/day' },
+        ],
+        links: {
+            github: 'https://github.com/shriram1206/ai-agent-n8n',
+            live: '#',
+        },
+        image: '/projects/ai-agent.png',
+        date: 'January 2026',
+    },
 ];
 
 export const experiences: Experience[] = [
+    {
+        id: 'servimos-technologies',
+        position: 'SDE Intern',
+        company: 'Servimos Technologies Pvt Ltd (WeServeTech LLC)',
+        duration: 'Feb 2026 – Mar 2026',
+        achievements: [
+            'Built AI Report Generator using Java 17 + Spring Boot + Spring AI 1.1.0 — connected LLMs to structured business data for automated, context-aware report generation',
+            'Implemented RAG context injection via pgvector + PostgreSQL for semantic document retrieval; applied MCP (SSE transport, JSON-RPC tool calling) to automate recurring reporting pipelines',
+            'Delivered end-to-end AI backend module in Agile sprint workflow with mentor reviews and full ownership',
+        ],
+        type: 'internship',
+    },
     {
         id: 'ybi-foundation',
         position: 'AI/ML Intern',
@@ -134,11 +250,11 @@ export const experiences: Experience[] = [
         id: 'edunet-foundation',
         position: 'Technology Development Intern',
         company: 'EduNet Foundation',
-        duration: 'Jul 2025 – Aug 2025',
+        duration: 'Jul 2025',
         achievements: [
-            'Contributed bug fixes and new features across SDLC phases, improving system stability by 25% through tighter validation and comprehensive regression testing',
-            'Actively participated in code reviews, Agile ceremonies, and delivered weekly demos with clear documentation',
-            'Gained hands-on experience with professional development workflows, version control best practices, and collaborative team dynamics',
+            'Contributed bug fixes and features across SDLC phases, improving system stability by ~25%',
+            'Participated in Agile ceremonies and technical documentation',
+            'Gained hands-on experience with professional development workflows and version control best practices',
         ],
         type: 'internship',
     },
@@ -158,12 +274,14 @@ export const skills: Skill[] = [
         category: 'Backend Technologies',
         skills: [
             { name: 'Spring Boot' },
+            { name: 'Spring AI 1.1.0' },
             { name: 'Spring Data JPA' },
             { name: 'Hibernate' },
             { name: 'Spring Security' },
             { name: 'Node.js' },
             { name: 'Express' },
             { name: 'REST APIs' },
+            { name: 'OAuth2' },
         ],
     },
     {
@@ -177,18 +295,33 @@ export const skills: Skill[] = [
         ],
     },
     {
-        category: 'Databases',
+        category: 'Databases & AI',
         skills: [
             { name: 'PostgreSQL' },
+            { name: 'pgvector' },
             { name: 'MySQL' },
             { name: 'MongoDB' },
+            { name: 'RAG (Retrieval Augmented Generation)' },
+            { name: 'MCP (Model Context Protocol)' },
         ],
     },
     {
         category: 'DevOps & Tools',
         skills: [
-            { name: 'Docker' },
-            { name: 'Kubernetes' },
+            { name: 'GitHub Actions' },
+            { name: 'CI/CD' },
+            { name: 'Maven' },
+        ],
+    },
+    {
+        category: 'AI/ML & Cloud',
+        skills: [
+            { name: 'OpenAI GPT-4o' },
+            { name: 'Prompt Engineering' },
+            { name: 'AWS' },
+            { name: 'Vercel' },
+            { name: 'Supabase' },
+            { name: 'Postmarnetes' },
             { name: 'Git/GitHub' },
             { name: 'CI/CD' },
             { name: 'Maven' },
@@ -198,24 +331,19 @@ export const skills: Skill[] = [
 
 export const certifications: Certification[] = [
     {
-        name: 'Cloud Computing',
-        issuer: 'NPTEL Elite',
-        date: 'September 2024',
+        name: 'Introduction to Model Context Protocol',
+        issuer: 'Anthropic',
+        date: '2026',
     },
     {
-        name: 'Agile Development',
+        name: 'Software & Agile Development',
         issuer: 'Infosys Springboard',
-        date: 'August 2024',
+        date: '2024',
     },
     {
-        name: 'Cybersecurity Virtual Experience',
-        issuer: 'TATA via Forage',
-        date: 'July 2024',
-    },
-    {
-        name: 'TCS ION Young Professional',
-        issuer: 'TCS',
-        date: 'June 2024',
+        name: 'Cloud Computing',
+        issuer: 'NPTEL',
+        date: '2024',
     },
 ];
 
@@ -223,8 +351,8 @@ export const education: Education[] = [
     {
         institution: 'Selvam College of Technology',
         degree: 'Bachelor of Engineering in Computer Science and Engineering',
-        duration: '2022 – 2026 (Expected: May 2026)',
-        grade: '8.0/10.0 (80%)',
+        duration: '2022 – May 2026 (Expected)',
+        grade: 'CGPA: 77%',
         coursework: [
             'Data Structures & Algorithms',
             'Object-Oriented Programming',

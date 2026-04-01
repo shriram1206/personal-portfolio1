@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Download, Code2 } from 'lucide-react';
+import { Download, Code2, Eye } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
 
 const Hero: React.FC = () => {
@@ -109,8 +109,20 @@ const Hero: React.FC = () => {
                             </motion.button>
 
                             <motion.a
-                                href="/resume.pdf"
-                                download
+                                href="/resume.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-8 py-3 bg-light-primary/10 dark:bg-dark-primary/10 border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-heading font-semibold rounded-soft hover:bg-light-primary dark:hover:bg-dark-primary hover:text-white transition-all duration-300 inline-flex items-center gap-2 shadow-sm"
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                            >
+                                <Eye className="w-5 h-5" strokeWidth={2.5} />
+                                View Resume
+                            </motion.a>
+
+                            <motion.a
+                                href="/resume.html"
+                                download="Shriram_M_Resume.html"
                                 className="px-8 py-3 border-2 border-light-primary dark:border-dark-primary text-light-primary dark:text-dark-primary font-heading font-semibold rounded-soft hover:bg-light-primary dark:hover:bg-dark-primary hover:text-white transition-all duration-300 inline-flex items-center gap-2 shadow-sm"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
