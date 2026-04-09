@@ -9,6 +9,7 @@ import './index.css';
 
 // Lazy load heavy sections
 const Projects = lazy(() => import('./components/Projects'));
+const GithubShowcase = lazy(() => import('./components/GithubShowcase'));
 const Experience = lazy(() => import('./components/Experience'));
 const Skills = lazy(() => import('./components/Skills'));
 const Contact = lazy(() => import('./components/Contact'));
@@ -31,6 +32,9 @@ function App() {
           <About />
           <Suspense fallback={<PageLoader />}>
             <Projects />
+          </Suspense>
+          <Suspense fallback={<PageLoader />}>
+            <GithubShowcase />
           </Suspense>
           <Suspense fallback={<PageLoader />}>
             <Experience />
