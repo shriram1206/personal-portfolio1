@@ -17,6 +17,38 @@ export const personalInfo = {
 
 export const projects: Project[] = [
     {
+        id: 'quro-db',
+        title: 'Quro — AI Database Assistant',
+        description: 'An intelligent Spring Boot application that translates natural language questions into executable SQL queries.',
+        longDescription: 'Quro acts as an AI-powered database assistant, allowing users to interact with their MySQL databases using plain English. Built with Spring Boot and powered by OpenAI\'s GPT-4o model, it bridges the gap between non-technical users and database management.',
+        techStack: ['Java 17', 'Spring Boot 3.5+', 'MySQL', 'Spring Data JPA', 'OpenAI API (GPT-4o)', 'Maven'],
+        achievements: [
+            'Architected a RESTful backend converting everyday English into accurate SQL queries.',
+            'Implemented automatic database initialization to provision schemas and populate sample data on startup.',
+            'Integrated OpenAI\'s GPT-4o model securely via .env configuration.',
+            'Developed a clean, responsive web interface for querying and viewing results interactively.'
+        ],
+        technicalDetails: [
+            'Spring Boot API & Web Interface',
+            'GPT-4o natural language processing',
+            'Secure credential management',
+            'Auto schema provisioning'
+        ],
+        metrics: [
+            { label: 'Technology', value: 'Spring Boot' },
+            { label: 'AI Model', value: 'GPT-4o' },
+            { label: 'Database', value: 'MySQL' },
+            { label: 'Status', value: 'Completed' },
+        ],
+        links: {
+            live: '',
+            github: 'https://github.com/shriram1206/quro-db',
+        },
+        image: '/projects/ai-agent.png',
+        date: '2026',
+        logo: '',
+    },
+    {
         id: 'feedbackwall',
         title: 'FeedbackWall — SaaS Feedback Management Platform',
         description: 'Solo-founded and shipped a public feedback management platform — Canny alternative with feature voting, changelog, email alerts, and embeddable widget',
