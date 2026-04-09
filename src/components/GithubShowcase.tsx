@@ -25,8 +25,8 @@ const GithubShowcase: React.FC = () => {
                 if (!response.ok) throw new Error('Failed to fetch repos');
                 const data = await response.json();
                 
-                // Filter out forks if preferred, or just set them directly
-                setRepos(data.filter((repo: any) => !repo.fork).slice(0, 6));
+                // Filter out forks and specific repos like 'birthday'
+                setRepos(data.filter((repo: any) => !repo.fork && repo.name !== 'birthday').slice(0, 6));
             } catch (error) {
                 console.error('Error fetching GitHub repositories:', error);
             } finally {
